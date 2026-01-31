@@ -65,26 +65,6 @@ video {
 	}
 }
 
-.action_box {
-	display: flex;
-	flex-direction: column;
-	color: white;
-
-	.action_btn {
-
-
-		.profile_btn{
-			
-		}
-		img {
-			width: 50px;
-			height: 50px;
-			object-fit: cover;
-			border-radius: 210px;
-		}
-	}
-}
-
 /* Footer */
 
 footer {
@@ -93,6 +73,7 @@ footer {
 	right: 0;
 	bottom: 0;
 	color: #fff;
+	background-color: black;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
@@ -103,10 +84,51 @@ footer {
 	padding: 0 16px;
 	position: absolute;
 	right: 0;
-	top: 40%;
+	top: 35%;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+}
+
+.action_box {
+	display: flex;
+	flex-direction: column;
+	color: white;
+
+	.action_btn {
+		width: 80px;
+		height: 80px;
+		margin-bottom: 0.5rem;
+		font-size: 2.5rem;
+		text-align: center;
+	}
+
+	.profile_btn {
+		display: flex;
+		position: relative;
+		width: 60px;
+		height: 60px;
+
+		.profile_badge {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			translate: -50% 50%;
+			font-size: 20px;
+			color: red;
+			background-color: transparent;
+		}
+
+		img {
+			border-radius: 1.5rem;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	span{
+		font-size: 1.5rem;
+	}
 }
 
 /* ---------------------
@@ -118,14 +140,14 @@ da rimuovere una volta concluso
 	border: 2px dashed #fff;
 }
 
-.debug .sidebar *{
-	min-width: 80px;
-	min-height: 450px;
+.debug .sidebar * {
+	/* min-width: 80px;
+	min-height: 450px; */
 	border: 2px dashed #ff0;
 }
 
 .debug .reel-header * {
-	min-height: 50px;
+	/* min-height: 50px; */
 	border: 2px dashed #fff;
 }
 
