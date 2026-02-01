@@ -27,9 +27,15 @@ video {
 	max-width: 512px;
 	min-width: 400px;
 	position: relative;
+
+	/* Format style a Tag */
+	a {
+		text-decoration: none;
+		color: white;
+	}
 }
 
-/* Reel Header */
+/* Class reel_header */
 .reel-header {
 	display: block;
 	position: absolute;
@@ -37,22 +43,22 @@ video {
 	left: 0;
 	right: 0;
 
-	/* Reel Nav Bar */
+	/* Reel nav_bar Container Flex*/
 	.nav_bar {
 		display: flex;
 		color: white;
 		justify-content: space-between;
 		align-items: flex-end;
 
+		/* Flex Items btn_box  Father: nav_bar */
 		.btn_box {
 			margin: 0.5rem;
 			padding: 0.7rem;
-		}
-
-		.btn_icon {
 			font-size: 1.5rem;
+
 		}
 
+		/* btn_3_text Container Flex */
 		.btn_3_text {
 			display: flex;
 			justify-content: center;
@@ -60,32 +66,34 @@ video {
 			padding: 0.2rem;
 		}
 
+		/* Flex Items btn_text  Father: btn_3_text */
 		.btn_text {
 			margin-right: 0.8rem;
 			font-size: 18px;
 			align-content: center;
 		}
-	}
 
-	a {
-		text-decoration: none;
-		color: white;
+		/* Selector Items for apply Border Style */
+		.btn_3_text>:nth-child(3) {
+			border-bottom: 2px solid white;
+		}
 	}
 }
 
-/* Sidebar */
+/* Class sidebar */
 .sidebar {
 	padding: 0 16px;
 	position: absolute;
 	right: 0;
 	top: 32%;
 
-	/* Reel Action Box */
+	/* reel_action_box Container Flex */
 	.reel_action_box {
 		display: flex;
 		flex-direction: column;
 		color: white;
 
+		/* Flex Items action_btn  Father: reel_action_box */
 		.action_btn {
 			width: 80px;
 			height: 80px;
@@ -94,12 +102,14 @@ video {
 			text-align: center;
 			justify-content: center;
 
+			/* Formatting span Tag inside sidebar -> reel_action_box -> action_btn */
 			span {
 				display: block;
 				font-size: 1rem;
 			}
 		}
 
+		/* profile_btn container Flex */
 		.profile_btn {
 			display: flex;
 			position: relative;
@@ -107,6 +117,7 @@ video {
 			width: 50px;
 			height: 50px;
 
+			/* Flex Item profile_badge */
 			.profile_badge {
 				position: absolute;
 				bottom: 0;
@@ -116,6 +127,7 @@ video {
 				color: red;
 			}
 
+			/* Formatting img Tag inside sidebar -> reel_action_bar -> profile_btn */
 			img {
 				border-radius: 1.5rem;
 				object-fit: cover;
@@ -123,13 +135,9 @@ video {
 			}
 		}
 	}
-
-	a {
-		text-decoration: none;
-		color: white;
-	}
 }
 
+/* Class reel_info */
 .reel_info {
 	position: absolute;
 	max-width: 70%;
@@ -138,22 +146,14 @@ video {
 	color: white;
 	text-decoration: none;
 
-
+	/* Formatting reel_title */
 	.reel_title {
 		margin-bottom: 0.5rem;
 		font-size: 1rem;
 	}
-
-	.reel_detail {
-
-		a {
-			color: white;
-			text-decoration: none;
-		}
-	}
 }
 
-/* Footer */
+/* Tag footer */
 footer {
 	position: absolute;
 	left: 0;
@@ -162,12 +162,13 @@ footer {
 	color: #fff;
 	background-color: black;
 
-	/* Profile Action Box */
+	/* profile_action_box Container Flex */
 	.profile_action_box {
 		display: flex;
 		justify-content: space-around;
 		color: white;
 
+		/* Flex Items action_btn  Father: profile_action_box */
 		.action_btn {
 			align-content: center;
 			width: 80px;
@@ -175,20 +176,24 @@ footer {
 			font-size: 1.5rem;
 			text-align: center;
 
+			/* Formatting span Tag inside footer -> profile_action_box -> action_btn */
 			span {
 				display: block;
 				font-size: 0.8rem;
 			}
 		}
 
+		/* Class icon_plus */
 		.icon_plus {
 			translate: 0 -8%;
 			font-size: 2rem;
 		}
 
+		/* Class badge_recive_message */
 		.badge_recive_message {
 			position: relative;
 
+			/* Formatting Style Simpla Badge */
 			.simple_badge {
 				position: absolute;
 				right: 20%;
