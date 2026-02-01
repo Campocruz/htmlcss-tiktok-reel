@@ -17,6 +17,7 @@ video {
 	object-fit: cover;
 }
 
+/* Reel Page */
 .reel-page {
 	height: 100vh;
 	/* ti incuriosisce? */
@@ -25,6 +26,7 @@ video {
 	position: relative;
 }
 
+/* Reel Header */
 .reel-header {
 	display: block;
 	position: absolute;
@@ -36,6 +38,7 @@ video {
 	le tue regole, se necessario. */
 }
 
+/* Reel Nav Bar */
 .nav_bar {
 	display: flex;
 	color: white;
@@ -65,43 +68,6 @@ video {
 	}
 }
 
-.reel_info {
-	position: absolute;
-	max-width: 70%;
-	bottom: 15%;
-	padding: 1rem;
-	color: white;
-	text-decoration: none;
-
-
-	.reel_title {
-		margin-bottom: 0.5rem;
-		font-size: 1rem;
-	}
-
-	.reel_detail {
-		
-		a{
-			color: white;
-			text-decoration: none;
-		}
-	}
-}
-
-/* Footer */
-
-footer {
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	color: #fff;
-	background-color: black;
-
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
-}
-
 /* Sidebar */
 .sidebar {
 	padding: 0 16px;
@@ -113,7 +79,8 @@ footer {
 	le tue regole, se necessario. */
 }
 
-.action_box {
+/* Reel Action Box */
+.reel_action_box {
 	display: flex;
 	flex-direction: column;
 	color: white;
@@ -154,6 +121,69 @@ footer {
 		border-radius: 1.5rem;
 		object-fit: cover;
 		object-position: center;
+	}
+}
+
+.reel_info {
+	position: absolute;
+	max-width: 70%;
+	bottom: 5%;
+	padding: 1rem;
+	color: white;
+	text-decoration: none;
+
+
+	.reel_title {
+		margin-bottom: 0.5rem;
+		font-size: 1rem;
+	}
+
+	.reel_detail {
+
+		a {
+			color: white;
+			text-decoration: none;
+		}
+	}
+}
+
+/* Footer */
+footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+	background-color: black;
+
+	/* Inserisci qui sotto 
+	le tue regole, se necessario. */
+}
+
+
+.profile_action_box {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+
+	.action_btn {
+		align-content: center;
+		width: 80px;
+		height: 75px;
+		font-size: 1.3rem;
+		text-align: center;
+
+		span {
+			display: block;
+			font-size: 0.8rem;
+
+
+			.icon_plus {
+				display: block;
+				font-size: 200rem;
+				justify-self: first baseline;
+			}
+		}
 	}
 }
 
