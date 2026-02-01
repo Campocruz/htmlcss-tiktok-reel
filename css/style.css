@@ -71,10 +71,12 @@ video {
 			margin-right: 0.8rem;
 			font-size: 18px;
 			align-content: center;
+			color: rgba(255, 255, 255, 0.493);
 		}
 
 		/* Selector Items for apply Border Style */
 		.btn_3_text>:nth-child(3) {
+			color: white;
 			border-bottom: 2px solid white;
 		}
 	}
@@ -175,6 +177,7 @@ footer {
 			height: 75px;
 			font-size: 1.5rem;
 			text-align: center;
+			color: rgba(255, 255, 255, 0.493);
 
 			/* Formatting span Tag inside footer -> profile_action_box -> action_btn */
 			span {
@@ -206,6 +209,10 @@ footer {
 			}
 		}
 	}
+	/* Selector Items for apply Border Style */
+		.profile_action_box>:nth-child(1) {
+			color: white;
+		}
 }
 
 
