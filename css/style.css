@@ -1,14 +1,17 @@
+/* Reset Rule */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+/* Body */
 body {
 	margin: 0 auto;
 	font-family: 'TikTok Sans', sans-serif;
 }
 
+/* Video */
 video {
 	height: 100%;
 	width: 100%;
@@ -34,37 +37,39 @@ video {
 	left: 0;
 	right: 0;
 
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
-}
-
-/* Reel Nav Bar */
-.nav_bar {
-	display: flex;
-	color: white;
-	justify-content: space-between;
-	align-items: flex-end;
-
-	.btn_box {
-		margin: 0.5rem;
-		padding: 0.7rem;
-	}
-
-	.btn_icon {
-		font-size: 1.5rem;
-	}
-
-	.btn_3_text {
+	/* Reel Nav Bar */
+	.nav_bar {
 		display: flex;
-		justify-content: center;
-		min-width: 60%;
-		padding: 0.2rem;
+		color: white;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		.btn_box {
+			margin: 0.5rem;
+			padding: 0.7rem;
+		}
+
+		.btn_icon {
+			font-size: 1.5rem;
+		}
+
+		.btn_3_text {
+			display: flex;
+			justify-content: center;
+			min-width: 60%;
+			padding: 0.2rem;
+		}
+
+		.btn_text {
+			margin-right: 0.8rem;
+			font-size: 18px;
+			align-content: center;
+		}
 	}
 
-	.btn_text {
-		margin-right: 0.8rem;
-		font-size: 18px;
-		align-content: center;
+	a {
+		text-decoration: none;
+		color: white;
 	}
 }
 
@@ -75,51 +80,53 @@ video {
 	right: 0;
 	top: 32%;
 
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
-}
+	/* Reel Action Box */
+	.reel_action_box {
+		display: flex;
+		flex-direction: column;
+		color: white;
 
-/* Reel Action Box */
-.reel_action_box {
-	display: flex;
-	flex-direction: column;
-	color: white;
+		.action_btn {
+			width: 80px;
+			height: 80px;
+			margin-bottom: 0.5rem;
+			font-size: 2rem;
+			text-align: center;
+			justify-content: center;
 
-	.action_btn {
-		width: 80px;
-		height: 80px;
-		margin-bottom: 0.5rem;
-		font-size: 2rem;
-		text-align: center;
-		justify-content: center;
+			span {
+				display: block;
+				font-size: 1rem;
+			}
+		}
 
-		span {
-			display: block;
-			font-size: 1rem;
+		.profile_btn {
+			display: flex;
+			position: relative;
+			left: 15%;
+			width: 50px;
+			height: 50px;
+
+			.profile_badge {
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				translate: -50% 50%;
+				font-size: 20px;
+				color: red;
+			}
+
+			img {
+				border-radius: 1.5rem;
+				object-fit: cover;
+				object-position: center;
+			}
 		}
 	}
 
-	.profile_btn {
-		display: flex;
-		position: relative;
-		left: 15%;
-		width: 50px;
-		height: 50px;
-
-		.profile_badge {
-			position: absolute;
-			bottom: 0;
-			left: 50%;
-			translate: -50% 50%;
-			font-size: 20px;
-			color: red;
-		}
-
-		img {
-			border-radius: 1.5rem;
-			object-fit: cover;
-			object-position: center;
-		}
+	a {
+		text-decoration: none;
+		color: white;
 	}
 }
 
@@ -155,47 +162,46 @@ footer {
 	color: #fff;
 	background-color: black;
 
-	/* Inserisci qui sotto 
-	le tue regole, se necessario. */
-}
+	/* Profile Action Box */
+	.profile_action_box {
+		display: flex;
+		justify-content: space-around;
+		color: white;
 
+		.action_btn {
+			align-content: center;
+			width: 80px;
+			height: 75px;
+			font-size: 1.5rem;
+			text-align: center;
 
-.profile_action_box {
-	display: flex;
-	justify-content: space-around;
-	color: white;
-
-	.action_btn {
-		align-content: center;
-		width: 80px;
-		height: 75px;
-		font-size: 1.5rem;
-		text-align: center;
-
-		span {
-			display: block;
-			font-size: 0.8rem;
+			span {
+				display: block;
+				font-size: 0.8rem;
+			}
 		}
-	}
 
-	.icon_plus {
-		translate: 0 -8%;
-		font-size: 2rem;
-	}
+		.icon_plus {
+			translate: 0 -8%;
+			font-size: 2rem;
+		}
 
-	.badge_recive_message {
-		position: relative;
+		.badge_recive_message {
+			position: relative;
 
-		.simple_badge {
-			position: absolute;
-			right: 20%;
-			border-radius: 9px;
-			padding: 0 6px;
-			font-size: 13px;
-			background-color: red;
+			.simple_badge {
+				position: absolute;
+				right: 20%;
+				border-radius: 9px;
+				padding: 0 6px;
+				font-size: 13px;
+				background-color: red;
+			}
 		}
 	}
 }
+
+
 
 /* ---------------------
 Regole per evidenziare i blocchi 
