@@ -73,7 +73,7 @@ video {
 	padding: 0 16px;
 	position: absolute;
 	right: 0;
-	top: 35%;
+	top: 32%;
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
@@ -98,36 +98,35 @@ video {
 			font-size: 1rem;
 		}
 	}
-}
 
-.profile_btn {
-	display: flex;
-	position: relative;
-	left: 15%;
-	width: 50px;
-	height: 50px;
+	.profile_btn {
+		display: flex;
+		position: relative;
+		left: 15%;
+		width: 50px;
+		height: 50px;
 
-	.profile_badge {
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		translate: -50% 50%;
-		font-size: 20px;
-		color: red;
-		background-color: transparent;
-	}
+		.profile_badge {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			translate: -50% 50%;
+			font-size: 20px;
+			color: red;
+		}
 
-	img {
-		border-radius: 1.5rem;
-		object-fit: cover;
-		object-position: center;
+		img {
+			border-radius: 1.5rem;
+			object-fit: cover;
+			object-position: center;
+		}
 	}
 }
 
 .reel_info {
 	position: absolute;
 	max-width: 70%;
-	bottom: 5%;
+	bottom: 9%;
 	padding: 1rem;
 	color: white;
 	text-decoration: none;
@@ -163,26 +162,37 @@ footer {
 
 .profile_action_box {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	color: white;
 
 	.action_btn {
 		align-content: center;
 		width: 80px;
 		height: 75px;
-		font-size: 1.3rem;
+		font-size: 1.5rem;
 		text-align: center;
 
 		span {
 			display: block;
 			font-size: 0.8rem;
+		}
+	}
 
+	.icon_plus {
+		translate: 0 -8%;
+		font-size: 2rem;
+	}
 
-			.icon_plus {
-				display: block;
-				font-size: 200rem;
-				justify-self: first baseline;
-			}
+	.badge_recive_message {
+		position: relative;
+
+		.simple_badge {
+			position: absolute;
+			right: 20%;
+			border-radius: 9px;
+			padding: 0 6px;
+			font-size: 13px;
+			background-color: red;
 		}
 	}
 }
