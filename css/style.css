@@ -185,7 +185,9 @@ footer {
 
 		/* Class icon_plus */
 		.icon_plus {
-			translate: 0 -8%;
+			background-color: transparent;
+			position: relative;
+			bottom: 10px;
 			font-size: 2rem;
 		}
 
